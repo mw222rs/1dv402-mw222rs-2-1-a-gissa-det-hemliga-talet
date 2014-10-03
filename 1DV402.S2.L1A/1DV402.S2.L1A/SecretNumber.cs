@@ -18,12 +18,12 @@ namespace _1DV402.S2.L1A
         {
             Random temp = new Random();
             _number = temp.Next(1, 101);
-
             _count = 0;
         }
 
         public bool MakeGuess(int number)
-        {
+    {
+            
             if (_count >= MaxNumberOfGuesses)
             {
                 throw new ApplicationException();
@@ -41,17 +41,26 @@ namespace _1DV402.S2.L1A
             {
                 Console.WriteLine("{0} är för litet. Du har {1} gissningar kvar.", number, ((MaxNumberOfGuesses - 1) - _count));
                 _count++;
+                if (_count == MaxNumberOfGuesses)
+                {
+                    Console.WriteLine("Det hemliga talet är {0}.", _number);
+                }
                 return false;
             }
             else if (number > _number)
             {
                 Console.WriteLine("{0} är för stort. Du har {1} gissningar kvar.", number, ((MaxNumberOfGuesses - 1) - _count));
                 _count++;
+                if (_count == MaxNumberOfGuesses)
+                {
+                    Console.WriteLine("Det hemliga talet är {0}.", _number);
+                }
                 return false;
             }
             return false;
 
         }
+
         public SecretNumber()
         {
             Initialize();
