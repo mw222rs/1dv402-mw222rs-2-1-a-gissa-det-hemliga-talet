@@ -22,8 +22,8 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="_1DV402.S2.L1A.SecretNumber">
-    <Position X="5.5" Y="0.5" Width="2.75" />
+  <Class Name="_1DV402.S2.L1A.SecretNumber" Collapsed="true">
+    <Position X="2.25" Y="2.75" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAACAAgBAAAA=</HashCode>
       <FileName>SecretNumber.cs</FileName>
