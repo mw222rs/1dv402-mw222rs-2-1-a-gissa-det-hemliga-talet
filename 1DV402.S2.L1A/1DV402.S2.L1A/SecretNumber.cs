@@ -34,18 +34,18 @@ namespace _1DV402.S2.L1A
             }
             if (number == _number)
             {
-                Console.WriteLine("Rätt!");
+                Console.WriteLine("RÄTT GISSAT. Du klarade det på {0} försökt.", _count + 1);
                 return true;
             }
             else if (number < _number)
             {
-                Console.WriteLine("För litet!");
+                Console.WriteLine("{0} är för litet. Du har {1} gissningar kvar.", number, ((MaxNumberOfGuesses - 1) - _count));
                 _count++;
                 return false;
             }
             else if (number > _number)
             {
-                Console.WriteLine("För stort!");
+                Console.WriteLine("{0} är för stort. Du har {1} gissningar kvar.", number, ((MaxNumberOfGuesses - 1) - _count));
                 _count++;
                 return false;
             }
