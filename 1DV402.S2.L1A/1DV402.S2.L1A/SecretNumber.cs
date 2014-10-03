@@ -6,20 +6,22 @@ using System.Threading.Tasks;
 
 namespace _1DV402.S2.L1A
 {
-    public class SecretNumber
+    class SecretNumber
     {
         private int _count;
         private int _number;
 
         public const int MaxNumberOfGuesses = 7;
 
-
-        public void Initialize()
+        public void Initialize 
         {
+<<<<<<< HEAD
             Random temp = new Random();
             _number = temp.Next(1, 101);
 
             _count = 0;
+=======
+>>>>>>> 529549be25e0f8d8111f0816e71162f12bcffea5
         }
 
         public bool MakeGuess(int number)
@@ -52,9 +54,14 @@ namespace _1DV402.S2.L1A
             return false; 
             
         }
+<<<<<<< HEAD
         public SecretNumber()
         {
             Initialize();
         }
+=======
+
+
+>>>>>>> 529549be25e0f8d8111f0816e71162f12bcffea5
     }
 }
